@@ -4,10 +4,10 @@ package org.example;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        DLL obj= new DLL();
+        CLL obj= new CLL();
         obj.insertFirst(1);
         obj.insertLast(2);
-        //obj.display();
+        obj.display();
         obj.insert(1,10);
         obj.display();
         obj.reverse();
