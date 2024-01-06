@@ -7,8 +7,10 @@ public class Main {
         SLL obj= new SLL();
         obj.insertFirst(1);
         obj.insertLast(2);
-        obj.display();
+        //obj.display();
         obj.insert(1,10);
+        obj.display();
+        obj.reverse();
         obj.display();
     }
 }

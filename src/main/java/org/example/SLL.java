@@ -90,6 +90,25 @@ public class SLL {
             prev.next=curr.next;
         }
     }
+
+    public Node reverse()
+    {
+        if(head==null||head.next==null)
+            return head;
+        Node curr=head;
+        Node prev=null;
+        Node next=curr.next;
+        while(curr!=null)
+        {
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+            if(next!=null)
+                next=next.next;
+        }
+        head=prev;
+        return prev;
+    }
     public void display()
     {
         Node curr=head;
